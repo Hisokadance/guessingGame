@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guessing game</title>
+    <link rel="stylesheet" href="styleindex/style.css">
+</head>
+<body>
+<h1>Игра угадай число жалкий мешок с костями</h1>
+<p>Тебе загадывают число от 1 до 100.
+    У тебя есть 10 попыток чтобы отгадать число. 
+    Игра будет подсказывать тебе какое число надо больше или меньше.
+    </p>
+
+    <div class="form">
+        <label for="guessField"> Введи число:</label>
+        <input type="number" min="1" max="100" required id="guessField" class="guessField">
+        <input type="submit" value="Ответить" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+    </div>
+
+    <script src="guessingGame/guessungGame.js"></script>
+</body>
+</html>
